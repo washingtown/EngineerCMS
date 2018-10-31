@@ -2,7 +2,7 @@
 ## EngineerCMS
 ————工程师知识管理系统
 
-[![License](https://img.shields.io/hexpm/l/plug.svg)](LICENSE) [![Build Status](https://travis-ci.org/3xxx/engineercms.svg?branch=master)](https://travis-ci.org/3xxx/engineercms) [![GoDoc](https://godoc.org/github.com/3xxx/engineercms?status.svg)](https://godoc.org/github.com/3xxx/engineercms)
+[![License](https://img.shields.io/hexpm/l/plug.svg)](LICENSE) [![Build Status](https://travis-ci.org/3xxx/engineercms.svg?branch=master)](https://travis-ci.org/3xxx/engineercms) [![GoDoc](https://godoc.org/github.com/washingtown/engineercms?status.svg)](https://godoc.org/github.com/washingtown/engineercms)
 
 [Demo2](https://zsj.itdos.com/)
 ——基于engineercms的设代资料管理平台（真实应用环境）
@@ -41,7 +41,7 @@
 9. 3种权限方式：IP地址段权限，适用于局域网内相互之间的无障碍访问；注册用户的权限适用于远程访问；用户组（角色）权限适用于项目团队协作；
 10. 公开和私有的个人日历日程。每个项目提供一个项目日程和大事记时间轴；
 11. 上传成果后，自动生成提供给MeritMS的成果清单，可提交给MeritMS系统进行成果统计；
-12. 成果提交给MeritMS后进行校审流程；详见[MeritMS](https://github.com/3xxx/MeritMS)；
+12. 成果提交给MeritMS后进行校审流程；详见[MeritMS](https://github.com/washingtown/MeritMS)；
 13. 目的是标准化管理自己的（项目团队的、公司的）知识体系，同时方便其他人根据权限查阅；退休后可将自己个人的cms系统导入cms服务器版，实现知识继承。
 
 二 应用案例：
@@ -86,7 +86,7 @@
 
 ## 下载和安装
 
-在release标签中下载二进制文件和源码压缩包。[https://github.com/3xxx/EngineerCMS/releases](https://github.com/3xxx/EngineerCMS/releases)
+在release标签中下载二进制文件和源码压缩包。[https://github.com/washingtown/EngineerCMS/releases](https://github.com/washingtown/EngineerCMS/releases)
 
 将二进制文件放到源码文件夹下直接运行即可。
 
@@ -106,8 +106,8 @@
 
 ## 免费开源和问题反馈
 
-* 开源地址[https://github.com/3xxx/engineercms/](https://github.com/3xxx/engineercms/)
-* 问题反馈: [https://github.com/3xxx/engineercms/issues](https://github.com/3xxx/engineercms/issues)
+* 开源地址[https://github.com/washingtown/engineercms/](https://github.com/washingtown/engineercms/)
+* 问题反馈: [https://github.com/washingtown/engineercms/issues](https://github.com/washingtown/engineercms/issues)
 
 ## 第三方包
 

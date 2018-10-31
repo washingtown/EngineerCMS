@@ -7,8 +7,8 @@ import (
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/context"
 	// "net/url"
-	"github.com/3xxx/engineercms/controllers/utils"
-	"github.com/3xxx/engineercms/models"
+	"github.com/washingtown/engineercms/controllers/utils"
+	"github.com/washingtown/engineercms/models"
 	"strconv"
 	// "github.com/astaxie/beego/session"
 	"encoding/json"
@@ -286,7 +286,7 @@ func (c *LoginController) WxLogin() {
 // 2018/09/09 18:57:04.791 [C] [asm_amd64.s:509] the request url is  /wx/wxlogin
 // 2018/09/09 18:57:04.807 [C] [asm_amd64.s:509] Handler crashed with error interfa
 // ce conversion: interface {} is nil, not string
-// 2018/09/09 18:57:04.807 [C] [asm_amd64.s:509] D:/gowork/src/github.com/3xxx/engi
+// 2018/09/09 18:57:04.807 [C] [asm_amd64.s:509] D:/gowork/src/github.com/washingtown/engi
 // neercms/controllers/login.go:260
 //判断用户是否登录
 func checkAccount(ctx *context.Context) bool {

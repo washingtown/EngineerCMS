@@ -1,11 +1,11 @@
 package main
 
 import (
-	_ "github.com/3xxx/engineercms/routers"
+	_ "github.com/washingtown/engineercms/routers"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	// "github.com/astaxie/beego/plugins/cors"
-	"github.com/3xxx/engineercms/models"
+	"github.com/washingtown/engineercms/models"
 	_ "github.com/mattn/go-sqlite3"
 	"os"
 	"time"

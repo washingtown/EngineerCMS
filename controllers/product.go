@@ -4,7 +4,7 @@ package controllers
 
 import (
 	"encoding/json"
-	"github.com/3xxx/engineercms/models"
+	"github.com/washingtown/engineercms/models"
 	"github.com/astaxie/beego"
 	// "github.com/astaxie/beego/context"
 	"github.com/astaxie/beego/httplib"
