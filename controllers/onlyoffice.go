@@ -2,8 +2,10 @@ package controllers
 
 import (
 	"encoding/json"
-	"github.com/washingtown/engineercms/models"
+
 	"github.com/astaxie/beego"
+	"github.com/washingtown/engineercms/models"
+
 	// "github.com/astaxie/beego/orm"
 	// "github.com/casbin/beego-orm-adapter"
 	"io/ioutil"
@@ -754,6 +756,11 @@ func (c *OnlyController) OnlyOffice() {
 		// c.TplName = "onlyoffice/onlyoffice.tpl"
 		c.Data["Type"] = "desktop"
 	}
+	//为模板提供本服务器及OnlyOffice服务地址
+	localServer := beego.AppConfig.String("LocalServer") + ":" + beego.AppConfig.String("httpport")
+	officeServer := beego.AppConfig.String("OfficeServer")
+	c.Data["LocalServer"] = localServer
+	c.Data["OfficeServer"] = officeServer
 	c.TplName = "onlyoffice/onlyoffice.tpl"
 }
 

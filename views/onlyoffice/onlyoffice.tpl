@@ -12,8 +12,8 @@
 
 	<body style="height: 100%; margin: 0;">
 		<div id="placeholder" style="height: 100%"></div>
-    <script type="text/javascript" src="http://192.168.99.100:9000/web-apps/apps/api/documents/api.js"></script>
-    <!-- http://192.168.99.101:9000/web-apps/apps/api/documents/api.js
+    <script type="text/javascript" src="http://{{.OfficeServer}}/web-apps/apps/api/documents/api.js"></script>
+    <!-- http://{{.LocalServer}}01:9000/web-apps/apps/api/documents/api.js
       https://office.ls123.site/web-apps/apps/api/documents/api.js -->
     <!-- https://docserver.itdos.com/web-apps/apps/api/documents/api.js -->
     <!-- http://39.104.112.149/ds-vpath/web-apps/apps/api/documents/api.js -->
@@ -132,12 +132,12 @@
 				// alert(changeUrl2);
     		docEditor.setHistoryData({
     			//下面这里存变化的位置
-      		// "changesUrl":"http://192.168.99.100:9000/cache/files/1522475922103673500_7157/changes.zip/changes.zip?md5=syFUueSXdnCWe60Iym001g==&expires=1525068326&disposition=attachment&ooname=output.zip",//string1, //the changesUrl from the JSON object returned after saving the document
+      		// "changesUrl":"http://{{.OfficeServer}}/cache/files/1522475922103673500_7157/changes.zip/changes.zip?md5=syFUueSXdnCWe60Iym001g==&expires=1525068326&disposition=attachment&ooname=output.zip",//string1, //the changesUrl from the JSON object returned after saving the document
       		"changesUrl":changeUrl2,
       		"key": key,
       		"previous": {
       		  "key": previousKey,//这里不影响版本切换。与上个版本对比
-      		  "url": previousUrl//http://192.168.99.100:9000/cache/files/1521953170330601700_4540/output.docx/output.docx?md5=eSwnrSSumTeMuh59IoXhCQ==&expires=1524547423&disposition=attachment&ooname=output.docx这里影响版本
+      		  "url": previousUrl//http://{{.OfficeServer}}/cache/files/1521953170330601700_4540/output.docx/output.docx?md5=eSwnrSSumTeMuh59IoXhCQ==&expires=1524547423&disposition=attachment&ooname=output.docx这里影响版本
       		},
       		"url": fileUrl,
       		"version": version
@@ -164,7 +164,7 @@
           "fileType": "{{.fileType}}",
           "key": "{{.Key}}",//"Khirz6zTPdfd7"
           "title": "{{.Doc.FileName}}",
-          "url": "http://192.168.99.1/attachment/onlyoffice/{{.Doc.FileName}}?hotqinsessionid={{.Sessionid}}",
+          "url": "http://{{.LocalServer}}/attachment/onlyoffice/{{.Doc.FileName}}?hotqinsessionid={{.Sessionid}}",
           "info": {
             "author": "John Smith",
             "created": "2010-07-07 3:46 PM",
@@ -194,7 +194,7 @@
         },
         "documentType": "{{.documentType}}",
         "editorConfig": {
-          "callbackUrl": "http://192.168.99.1/url-to-callback?id={{.Doc.Id}}",
+          "callbackUrl": "http://{{.LocalServer}}/url-to-callback?id={{.Doc.Id}}",
         	"createUrl": "https://example.com/url-to-create-document/",
           "user": {
             "id": {{.Uid}},
@@ -207,24 +207,24 @@
             "customer": {
               "address": "116# Tianshou Road,Guangzhou China",
               "info": "QQ504284",
-              "logo": "http://192.168.99.1/static/img/user.jpg",//logo-big.png
+              "logo": "http://{{.LocalServer}}/static/img/user.jpg",//logo-big.png
               "mail": "xc-qin@163.com",
               "name": "Qin Xiao Chuan",
               "www": "github.com/3xxx"
             },
             "feedback": {
-              "url": "http://192.168.99.1/onlyoffice",
+              "url": "http://{{.LocalServer}}/onlyoffice",
               "visible": true
             },
             "forcesave": false,
             "goback": {
               "text": "Go to Documents",
-              "url": "http://192.168.99.1/onlyoffice"
+              "url": "http://{{.LocalServer}}/onlyoffice"
             },
             "logo": {
-              "image": "http://192.168.99.1/static/img/oo.png",//logo.png
-              "imageEmbedded": "http://192.168.99.1/static/img/oo.png",//logo_em.png
-              "url": "http://192.168.99.1/onlyoffice"
+              "image": "http://{{.LocalServer}}/static/img/oo.png",//logo.png
+              "imageEmbedded": "http://{{.LocalServer}}/static/img/oo.png",//logo_em.png
+              "url": "http://{{.LocalServer}}/onlyoffice"
             },
             "showReviewChanges": false,
             "zoom": 100,
@@ -264,11 +264,11 @@
 "key":"1521953170330601700",
 "status":2,
 
-"url":"http://192.168.99.100:9000/cache/files/1521953170330601700_4540/outpu
+"url":"http://{{.OfficeServer}}/cache/files/1521953170330601700_4540/outpu
 t.docx/output.docx?md5=eSwnrSSumTeMuh59IoXhCQ==&expires=1524547423&disposition=a
 ttachment&ooname=output.docx",
 
-"changesurl":"http://192.168.99.100:9000/cache/fil
+"changesurl":"http://{{.OfficeServer}}/cache/fil
 es/1521953170330601700_4540/changes.zip/changes.zip?md5=w6DItkSwyBJkuHDl_CiZZQ==
 &expires=1524547423&disposition=attachment&ooname=output.zip",
 
